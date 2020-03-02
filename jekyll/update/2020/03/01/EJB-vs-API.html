@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The big enterprise question: ESB vs API</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The big enterprise question: ESB vs API</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+APIs have changed the applications development landscape in this decade. But large organizations are well invested in SOA (Service Oriented…
+</section>
+<section data-field="body" class="e-content">
+<section name="69e9" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="2e7f" id="2e7f" class="graf graf--h3 graf--leading graf--title">The big enterprise question: ESB vs API</h3><p name="5049" id="5049" class="graf graf--p graf-after--h3">APIs have changed the applications development landscape in this decade. But large organizations are well invested in SOA (Service Oriented Architecture) and middleware infrastructure already and such enterprises ask repeatedly one question:</p><p name="63d9" id="63d9" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">What is the difference between an ESB (Enterprise Service Bus) and an API ?</strong></p><p name="67e7" id="67e7" class="graf graf--p graf-after--p">or why shouldn’t we simply use an ESB to create APIs ?</p><p name="ea42" id="ea42" class="graf graf--p graf-after--p">After all ESBs come with a wide range of tooling and automation - gui modeling with drag and drop palettes, built-in features for mapping various data formats; can easily integrate with back end systems with out of box routing options and high fault tolerance. So why not just configure them with APIs ?</p><p name="dc8c" id="dc8c" class="graf graf--p graf-after--p">We may have to look at what APIs, SOA and ESBs represent conceptually.</p><p name="825a" id="825a" class="graf graf--p graf-after--p">API architectures focus on developing a network of well connected domain models, which can be packaged &amp; published &amp; deployed &amp; scaled with independent requirements</p><figure name="a603" id="a603" class="graf graf--figure graf--layoutOutsetLeft graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 525px; max-height: 331px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 63.1%;"></div><img class="graf-image" data-image-id="1*ZzJtb7KKtLkJlvckeR9H2w.png" data-width="1576" data-height="994" data-is-featured="true" src="https://cdn-images-1.medium.com/max/600/1*ZzJtb7KKtLkJlvckeR9H2w.png"></div></figure><p name="6e35" id="6e35" class="graf graf--p graf-after--figure">SOA creates a stack with a group of services. Each layer is an abstraction and reduces the complexity of the services below it. SOA does a good job in reducing the complexities of integrating with external/third-party systems and the need for service consumers to be aware of it.</p><p name="ea61" id="ea61" class="graf graf--p graf-after--p">ESBs are built into the SOA “middleware” to overcome integration problems between incompatible systems. One of the systems may be a slow receiver, another may need messages in binary format.</p><p name="e195" id="e195" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">APIs inherently necessitate being platform independent</strong> and having less interaction with its runtime / container. They are logical units that can be replicated and scaled as necessary to accomplish a very focused aspect. <strong class="markup--strong markup--p-strong">ESB’s are containers</strong> which run integration specifications to receive a message from one producer and transform and transport reliably to multiple consumers.</p><p name="d6e2" id="d6e2" class="graf graf--p graf-after--p">While there are many technical answers, we need a more intuitive example.</p><p name="14d2" id="14d2" class="graf graf--p graf-after--p">Comparing <code class="markup--code markup--p-code">ESBs to APIs</code>is similar to comparing <code class="markup--code markup--p-code">Tunnels to Cities</code>.</p><p name="a2cb" id="a2cb" class="graf graf--p graf-after--p">Planning a city requires connecting living spaces, roads, and resources, with specific policies and standards. It helps in effectively connecting and utilizing independent aspects of an urban architecture for social and economic benefits.</p><figure name="f837" id="f837" class="graf graf--figure graf--layoutOutsetLeft graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 525px; max-height: 363px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 69.19999999999999%;"></div><img class="graf-image" data-image-id="1*X8vOSmt5Jn1Ok2sZel0fgw.jpeg" data-width="650" data-height="450" src="https://cdn-images-1.medium.com/max/600/1*X8vOSmt5Jn1Ok2sZel0fgw.jpeg"></div></figure><p name="76cf" id="76cf" class="graf graf--p graf-after--figure">APIs can have a similar interpretation. Every API focuses on a specific aspect of the solution architecture and provides maximum utilization. API’s transform IT from traditional architectures into independent catalogs of APIs that can be mixed and matched for specific needs.</p><p name="0817" id="0817" class="graf graf--p graf-after--p">Though urban architecture makes city planning easier, natural geography like mountains, water bodies always limit it’s extend. To overcome any limitation, architects resort to highly technical structures like tunnels, suspension bridges, etc.</p><figure name="d0f5" id="d0f5" class="graf graf--figure graf--layoutOutsetLeft graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 525px; max-height: 344px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 65.5%;"></div><img class="graf-image" data-image-id="1*qPjXOSzn3KpdA35XgLvdOQ.jpeg" data-width="875" data-height="573" src="https://cdn-images-1.medium.com/max/600/1*qPjXOSzn3KpdA35XgLvdOQ.jpeg"></div></figure><p name="1224" id="1224" class="graf graf--p graf-after--figure">ESBs and message brokers have the same characteristics of complicated structures like tunnels. They play an integration role in SOA.</p><p name="4818" id="4818" class="graf graf--p graf-after--p">When certain parts of enterprise architecture do not communicate well, ESB’s can provide integration structures to simplify the passage of message between them.</p><p name="818d" id="818d" class="graf graf--p graf-after--p">ESBs provide configurable state machines for messages transported between two incompatible interfaces (example: legacy products like Mainframes, ERP, etc).</p><p name="b667" id="b667" class="graf graf--p graf-after--p">The main aim of ESBs is to reduce the limits of IT Architecture.</p><p name="c7e9" id="c7e9" class="graf graf--p graf-after--p">The implementation and technology of ESBs can be technically impressive, but there are reasons for why they cannot consume the whole IT infrastructure.</p><p name="b342" id="b342" class="graf graf--p graf-after--p">When large middleware containers run application logic, new application use-cases become tough to be introduced in that ecosystem. Every new requirement will require additional infrastructural spending.</p><figure name="548a" id="548a" class="graf graf--figure graf--layoutOutsetLeft graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 525px; max-height: 415px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 79.10000000000001%;"></div><img class="graf-image" data-image-id="1*aawwfXT8ome1d6WmQhl1yQ.jpeg" data-width="1200" data-height="949" src="https://cdn-images-1.medium.com/max/600/1*aawwfXT8ome1d6WmQhl1yQ.jpeg"></div></figure><p name="139c" id="139c" class="graf graf--p graf-after--figure">APIs encourage creation of simplified models which can be applied for various use cases. Every new feature introduced can be easily decomposed into smaller artifacts.</p><p name="b841" id="b841" class="graf graf--p graf-after--p">API catalogs give an understandable documentation. Business Analysts, Consumers, Third party app developers all work hand in hand.</p><p name="ce41" id="ce41" class="graf graf--p graf-after--p">API economy and monetization takes the benefits of IT infrastructure beyond an organization’s borders.</p><p name="76be" id="76be" class="graf graf--p graf-after--p">APIs allow applying different policies for security, roles, data standards, into different parts of an application. APIs have changed the layout of software architecture from being heavily layered into a highly interactive graph.</p><p name="aa39" id="aa39" class="graf graf--p graf-after--p">Whereas in the case of ESBs, the more they become logically involved in a use-case, the less flexible IT assets will become.</p><p name="b3df" id="b3df" class="graf graf--p graf-after--p graf--trailing">Tunnels are fascinating. They need technical expertise. But Tunnels are not the same as Cities. They both have their own functional areas.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@deepakrajamohan" class="p-author h-card">Deepak Rajamohan</a> on <a href="https://medium.com/p/4c463a2bf40c"><time class="dt-published" datetime="2017-05-01T06:48:14.606Z">May 1, 2017</time></a>.</p><p><a href="https://medium.com/@deepakrajamohan/the-big-enterprise-question-esb-vs-api-4c463a2bf40c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on November 16, 2019.</p></footer></article></body></html>
