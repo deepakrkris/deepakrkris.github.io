@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-js-77711e750d9515aef771.js","mappings":"+GAAe,SAASA,IACpB,MAAO,OACX,C","sources":["webpack://deepak-site/./src/pages/index.js"],"sourcesContent":["export default function Component() {\n    return \"Hello\"\n}"],"names":["Component"],"sourceRoot":""}
